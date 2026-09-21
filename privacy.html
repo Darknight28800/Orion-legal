@@ -12,7 +12,7 @@
 </head>
 <body>
   <h1>Politique de confidentialité de Lyana</h1>
-  <p>Dernière mise à jour : 19 septembre 2026.</p>
+  <p>Dernière mise à jour : 21 septembre 2026.</p>
 
   <h2>Qui utilise Lyana</h2>
   <p>Lyana est une application personnelle, utilisée uniquement par son créateur sur son propre compte Google. Elle n'est pas proposée à d'autres utilisateurs.</p>
@@ -20,16 +20,23 @@
   <h2>Données Google auxquelles Lyana accède</h2>
   <p>Avec l'autorisation explicite de l'utilisateur, Lyana accède à Google Agenda (scope <code>https://www.googleapis.com/auth/calendar</code>) pour :</p>
   <ul>
-    <li>lire les événements de l'agenda, lorsque l'utilisateur le demande ;</li>
-    <li>créer des événements, uniquement après confirmation explicite de l'utilisateur.</li>
+    <li>lire les événements de l'agenda, lorsque l'utilisateur le demande, ainsi que pour lui envoyer un résumé de sa journée et des alertes avant ses rendez-vous ;</li>
+    <li>créer, modifier ou supprimer des événements, uniquement après confirmation explicite de l'utilisateur.</li>
   </ul>
+  <p>Avec l'autorisation explicite de l'utilisateur, Lyana accède à Gmail (scopes <code>https://www.googleapis.com/auth/gmail.readonly</code> et <code>https://www.googleapis.com/auth/gmail.compose</code>) pour :</p>
+  <ul>
+    <li>rechercher, lire et résumer des mails, lorsque l'utilisateur le demande ;</li>
+    <li>signaler à l'utilisateur l'arrivée d'un mail important non lu (expéditeur et objet uniquement), si cette option est activée ;</li>
+    <li>préparer un brouillon de mail dans Gmail, uniquement après confirmation explicite de l'utilisateur.</li>
+  </ul>
+  <p>Lyana n'envoie jamais de mail, n'en supprime jamais et ne modifie jamais les mails existants. La permission de création de brouillons (<code>gmail.compose</code>) est plus large que cet usage, mais l'application ne comporte aucune fonction d'envoi : l'utilisateur relit et envoie lui-même le brouillon depuis Gmail.</p>
 
   <h2>Utilisation des données</h2>
-  <p>Les données de l'agenda ne servent qu'à répondre aux demandes de l'utilisateur. Elles ne sont ni vendues, ni utilisées pour de la publicité, ni partagées avec des tiers, à l'exception de ce qui est décrit ci-dessous.</p>
-  <p>Pour comprendre les demandes et rédiger les réponses, le texte des messages et les informations d'agenda nécessaires à la réponse sont transmis à l'API d'Anthropic (modèle Claude). Les messages transitent aussi par Telegram, qui sert d'interface.</p>
+  <p>Les données de l'agenda et des mails ne servent qu'à répondre aux demandes de l'utilisateur et aux messages qu'il a activés. Elles ne sont ni vendues, ni utilisées pour de la publicité, ni partagées avec des tiers, à l'exception de ce qui est décrit ci-dessous. Aucune personne ne lit les données de l'utilisateur, hormis lui-même.</p>
+  <p>Pour comprendre les demandes et rédiger les réponses, le texte des messages et les informations d'agenda ou de mails nécessaires à la réponse (par exemple le texte d'un mail que l'utilisateur demande de résumer) sont transmis à l'API d'Anthropic (modèle Claude). Les messages transitent aussi par Telegram, qui sert d'interface.</p>
 
   <h2>Stockage et conservation</h2>
-  <p>Le jeton d'accès à Google est conservé uniquement dans un fichier de configuration local, sur l'ordinateur de l'utilisateur. L'historique récent des conversations et les rappels sont conservés dans une base de données locale. Aucune donnée de l'agenda n'est copiée dans une base externe.</p>
+  <p>Le jeton d'accès à Google est conservé uniquement dans un fichier de configuration local, sur l'ordinateur de l'utilisateur. L'historique récent des conversations, les rappels et les réglages sont conservés dans une base de données locale ; il peut contenir les résumés d'agenda envoyés par Lyana ainsi que l'expéditeur et l'objet des mails signalés. Le contenu complet des mails n'est pas conservé. Aucune donnée de l'agenda ou des mails n'est copiée dans une base externe.</p>
 
   <h2>Conformité aux règles de Google</h2>
   <p>L'utilisation par Lyana des informations reçues des API Google respecte la <a href="https://developers.google.com/terms/api-services-user-data-policy">politique relative aux données utilisateur des services d'API Google</a>, y compris les exigences d'utilisation limitée.</p>
