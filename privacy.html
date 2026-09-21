@@ -12,7 +12,7 @@
 </head>
 <body>
   <h1>Politique de confidentialité de Lyana</h1>
-  <p>Dernière mise à jour : 21 septembre 2026.</p>
+  <p>Dernière mise à jour : 22 septembre 2026.</p>
 
   <h2>Qui utilise Lyana</h2>
   <p>Lyana est une application personnelle, utilisée uniquement par son créateur sur son propre compte Google. Elle n'est pas proposée à d'autres utilisateurs.</p>
@@ -34,9 +34,10 @@
   <h2>Utilisation des données</h2>
   <p>Les données de l'agenda et des mails ne servent qu'à répondre aux demandes de l'utilisateur et aux messages qu'il a activés. Elles ne sont ni vendues, ni utilisées pour de la publicité, ni partagées avec des tiers, à l'exception de ce qui est décrit ci-dessous. Aucune personne ne lit les données de l'utilisateur, hormis lui-même.</p>
   <p>Pour comprendre les demandes et rédiger les réponses, le texte des messages et les informations d'agenda ou de mails nécessaires à la réponse (par exemple le texte d'un mail que l'utilisateur demande de résumer) sont transmis à l'API d'Anthropic (modèle Claude). Les messages transitent aussi par Telegram, qui sert d'interface.</p>
+  <p>Fonction facultative, active seulement si l'utilisateur a configuré la clé correspondante : lorsque l'utilisateur envoie un message vocal sur Telegram, l'enregistrement audio est transmis au service de transcription d'OpenAI, uniquement pour obtenir son texte, et est soumis à la <a href="https://openai.com/policies/privacy-policy">politique de confidentialité d'OpenAI</a>. Le texte obtenu est ensuite traité comme un message écrit : il est transmis à Anthropic comme décrit ci-dessus.</p>
 
   <h2>Stockage et conservation</h2>
-  <p>Le jeton d'accès à Google est conservé uniquement dans un fichier de configuration local, sur l'ordinateur de l'utilisateur. L'historique récent des conversations, les rappels et les réglages sont conservés dans une base de données locale ; il peut contenir les résumés d'agenda envoyés par Lyana ainsi que l'expéditeur et l'objet des mails signalés. Le contenu complet des mails n'est pas conservé. Aucune donnée de l'agenda ou des mails n'est copiée dans une base externe.</p>
+  <p>Le jeton d'accès à Google est conservé uniquement dans un fichier de configuration local, sur l'ordinateur de l'utilisateur. L'historique récent des conversations, les rappels et les réglages sont conservés dans une base de données locale ; il peut contenir les résumés d'agenda envoyés par Lyana ainsi que l'expéditeur et l'objet des mails signalés. Les enregistrements audio des messages vocaux ne sont pas conservés par Lyana ; seul leur texte transcrit est enregistré dans l'historique, comme un message écrit. Le contenu complet des mails n'est pas conservé. Aucune donnée de l'agenda ou des mails n'est copiée dans une base externe.</p>
 
   <h2>Conformité aux règles de Google</h2>
   <p>L'utilisation par Lyana des informations reçues des API Google respecte la <a href="https://developers.google.com/terms/api-services-user-data-policy">politique relative aux données utilisateur des services d'API Google</a>, y compris les exigences d'utilisation limitée.</p>
